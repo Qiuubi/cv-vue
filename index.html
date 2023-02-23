@@ -11,33 +11,12 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Présentation</a></li>
-                <li><a href="#">Profil</a></li>
-                <li><a href="#">Compétences</a></li>
-                <li><a href="#">Expériences</a></li>
-                <li><a href="#">Formations</a></li>
-                <li><a href="#">Projets</a></li>
-                <li><a href="#">Centre d'intérêts</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="app">
+        <cv-header></cv-header>
+        <cv-main></cv-main>
+    </div>
+
     <main>
-        <section class="cv-quang-name-details">
-            <h2>Présentation</h2>
-            <p>Je suis Quang. Avant j'ai été juriste et je suis maintenant développeur web</p>
-            <p>Ce CV utilise Vue.js</p>
-        </section>
-        <section class="cv-quang-summ">
-            <h2>Profil</h2>
-            <p>En plus de l'activité de juriste, j'exerce également l'activité de développeur web tout en poursuivant
-                une formation pour devenir Développeur Full Stack.</p>
-            <p> Je suis également illustrateur et graphiste, qui sont certes des activités artistiques mais
-                complémentaires, surtout dans le domaine de la cosmétique.</p>
-            <p>Je suis membre du bureau de l'Association Française des Juristes d'Entreprise (AFJE).</p>
-        </section>
         <section class="cv-quang-lang-tech">
             <h2>Compétences</h2>
             <h3>Techniques</h3>
@@ -228,7 +207,15 @@
         </section>
     </main>
     <footer></footer>
-    <script src="assets/js/script.js"></script>
+    <script src="main.js"></script>
+    <script src="components/CVHeader.js"></script>
+    <script src="components/NavLinks.js"></script>
+    <script src="components/CVMain.js"></script>
+    <script src="components/Presentation.js"></script>
+    <script src="components/Profile.js"></script>
+    <script>
+        const mountedApp = app.mount('#app');
+    </script>
 </body>
 
 
