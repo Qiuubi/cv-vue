@@ -6,7 +6,8 @@ app.component('cv-main', {
         <skills></skills>
         <experiences></experiences>
         <education></education>
-        <projects><projects>`,
+        <projects></projects>
+        <hobbies></hobbies>`,
     data() {
         return { name: "Nguyen Quang" }
     }

@@ -12,23 +12,13 @@
 
 <body>
     <div id="app">
-        <cv-header></cv-header>
-        <cv-main></cv-main>
-    </div>
+        <main>
+            <cv-header></cv-header>
+            <cv-main></cv-main>
+            <cv-footer></cv-footer>
+        </main>
 
-    <main>
-        <section class="cv-quang-interests">
-            <ul>
-                <li>Le dessin et l’illustration</li>
-                <li>Les jeux vidéo</li>
-                <li>L’informatique</li>
-                <li>Le cinéma et les séries</li>
-                <li>Le manga et l’anime</li>
-                <li>Le voyage</li>
-                <li>L’écriture et littérature</li>
-            </ul>
-        </section>
-    </main>
+    </div>
     <footer></footer>
     <script src="main.js"></script>
     <script src="components/CVHeader.js"></script>
@@ -37,8 +27,13 @@
     <script src="components/Presentation.js"></script>
     <script src="components/Profile.js"></script>
     <script src="components/Skills.js"></script>
+    <script src="components/Education.js"></script>
     <script src="components/Experiences.js"></script>
     <script src="components/Projects.js"></script>
+    <script src="components/ProProjects.js"></script>
+    <script src="components/PersoProjects.js"></script>
+    <script src="components/Hobbies.js"></script>
+    <script src="components/CVFooter.js"></script>
     <script>
         const mountedApp = app.mount('#app');
     </script>
