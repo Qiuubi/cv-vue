@@ -1,7 +1,9 @@
 app.component('cv-footer', {
     template:
         /*html*/
-        `<nav-links :navLinks="navLinks"></nav-links>`,
+        `<footer>
+            <p>Ce CV est réalisé grâce à <a href=""></a></p>
+        </footer>`,
     data() {
         return {
             links: [

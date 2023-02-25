@@ -15,7 +15,7 @@ app.component('presentation', {
     data() {
         return {
             title: "Présentation",
-            description: "Gamer assidu, lecteur de SF passionné, dessinateur en herbe, développeur en maturation"
+            description: "Gamer assidu, lecteur de SF passionné, dessinateur en herbe, développeur en maturation",
         }
     }
 })

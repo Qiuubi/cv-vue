@@ -1,21 +1,39 @@
 app.component('experiences', {
     template:
         /*html*/
-        `<section id="education" class="cv-quang-educ">
-        <h2>{{ title }}</h2>
-        <ul>
-            <li v-for="diploma in list"> {{ diploma.school }}- {{ diploma.name }} - {{ diploma.date }}</li>
-        </ul>
-    </section>`,
+        `<section class="cv-quang-work-exp">
+            <h2>{{ title }}</h2>
+            <h3>{{ webTitle }}</h3>
+            <ul>
+                <li v-for="job in web">
+                    <h4>{{job.name}} - {{job.company}} -  {{job.town}} - {{ job.date }}</h4>
+                </li>
+            </ul>
+            <h3>{{legalTitle}}</h3>
+            <ul>
+                <li v-for="job in legal">
+                    <h4>{{job.name}} - {{job.company}} -  {{job.town}} - {{ job.date }}</h4>
+                </li>
+            </ul>
+        </section>`,
     data() {
         return {
-            title: "Formations et certifications",
+            title: "Expériences professionnelles",
             webTitle: "Web",
-            list: [
-                { school: "3W Academy", name: "Développeur intégrateur en réalisation d’applications web", date: "2020-2022" },
-                { school: "EDASOP", name: "CAPA", date: "2016-2017" },
-                { school: "UT1 Capitole", name: "Master 2 Droit Privé Fondamental", date: "2013-2014" }
-            ]
+            web: [
+                { name: "Développeur Web", company: "Occitech", town: "Toulouse", date: "11/22 - 02/23" },
+                { name: "Développeur Web", company: "Fragrance et Beauté Françaises", town: "Castres", date: "06/20 - 09/22" }
+            ],
+            legalTitle: "Juridique",
+            legal: [
+                { name: "Juriste d'affaires", company: "VINCI Energies", town: "Toulouse", date: "03/19 - 07/19" },
+                { name: "Juriste", company: "Metis AVOCATS", town: "Toulouse", date: "11/17 - 06/18" },
+                { name: "Elève-avocat stagiaire", company: "Me. Agba, Me. Frisch et Me. Nidecker", town: "Toulouse", date: "03/17 - 09/17" },
+                { name: "Juriste stagiaire", company: "Pierre Fabre Dermo-Cosmétique", town: "Lavaur", date: "09/16 - 03/17" },
+            ],
+            styles: {
+                paddingLeft: '10px'
+            }
         }
     }
 })

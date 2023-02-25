@@ -1,7 +1,7 @@
 app.component('skills', {
     template:
         /*html*/
-        `<section class="cv-quang-skills-tech">
+        `<section id="skills" class="cv-quang-skills-tech">
             <h2>{{ title }}</h2>
             <ul>
                 <li v-for="skill in skillsList">{{skill.name}} : {{ skill.content }}</li>
@@ -9,6 +9,7 @@ app.component('skills', {
         </section>`,
     data() {
         return {
+            title: "Compétences techniques",
             skillsList: [
                 { name: "Methodologies", content: "Cycle en V, Agile" },
                 { name: "Langages", content: "HTML CSS, PHP, JavaScript" },
@@ -19,7 +20,6 @@ app.component('skills', {
                 { name: "Système", content: "MacOS, Linux Manjaro" },
                 { name: "Outils", content: "VSCode, PHPStorm, Git" },
             ],
-            title: "Compétences techniques",
         }
     }
 })
