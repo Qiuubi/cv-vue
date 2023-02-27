@@ -1,14 +1,20 @@
-app.component('skills', {
+app.component('cv-main', {
     template:
         /*html*/
-        `<section class="cv-quang-skills-tech">
-            <h2>{{ title }}</h2>
-            <ul>
-                <li v-for="skill in skillsList">{{skill.name}} : {{ skill.content }}</li>
-            </ul>
-        </section>`,
+        `<main class="cv-main">
+            <presentation :name="name"></presentation>
+            <profile></profile>
+            <div class="container">
+                <skills :skillsList="skillsList"></skills>
+                <education></education>
+            </div>
+            <experiences></experiences>
+            <projects></projects>
+            <hobbies></hobbies>
+        </main>`,
     data() {
         return {
+            name: "Nguyen Quang",
             skillsList: [
                 { name: "Methodologies", content: "Cycle en V, Agile" },
                 { name: "Langages", content: "HTML CSS, PHP, JavaScript" },
@@ -19,7 +25,7 @@ app.component('skills', {
                 { name: "Système", content: "MacOS, Linux Manjaro" },
                 { name: "Outils", content: "VSCode, PHPStorm, Git" },
             ],
-            title: "Compétences techniques",
         }
     }
 })
+

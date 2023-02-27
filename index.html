@@ -8,37 +8,31 @@
     <title>NGUYEN Quang</title>
     <link rel="stylesheet" href="assets/style/css/style.css">
     <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/vue-router@4"></script>
 </head>
 
 <body>
     <div id="app">
         <cv-header></cv-header>
         <cv-main></cv-main>
+        <cv-footer></cv-footer>
     </div>
-
-    <main>
-        <section class="cv-quang-interests">
-            <ul>
-                <li>Le dessin et l’illustration</li>
-                <li>Les jeux vidéo</li>
-                <li>L’informatique</li>
-                <li>Le cinéma et les séries</li>
-                <li>Le manga et l’anime</li>
-                <li>Le voyage</li>
-                <li>L’écriture et littérature</li>
-            </ul>
-        </section>
-    </main>
-    <footer></footer>
     <script src="main.js"></script>
-    <script src="components/CVHeader.js"></script>
-    <script src="components/NavLinks.js"></script>
-    <script src="components/CVMain.js"></script>
-    <script src="components/Presentation.js"></script>
-    <script src="components/Profile.js"></script>
-    <script src="components/Skills.js"></script>
-    <script src="components/Experiences.js"></script>
-    <script src="components/Projects.js"></script>
+    <script src="src/components/CVHeader.js"></script>
+    <script src="src/components/NavLinks.js"></script>
+    <script src="src/components/CVMain.js"></script>
+    <script src="src/components/Presentation.js"></script>
+    <script src="src/components/Illustration.js"></script>
+    <script src="src/components/Profile.js"></script>
+    <script src="src/components/Skills.js"></script>
+    <script src="src/components/Education.js"></script>
+    <script src="src/components/Experiences.js"></script>
+    <script src="src/components/Projects.js"></script>
+    <script src="src/components/ProProjects.js"></script>
+    <script src="src/components/PersoProjects.js"></script>
+    <script src="src/components/Hobbies.js"></script>
+    <script src="src/components/CVFooter.js"></script>
+    <script src="https://kit.fontawesome.com/60063948ef.js" crossorigin="anonymous"></script>
     <script>
         const mountedApp = app.mount('#app');
     </script>

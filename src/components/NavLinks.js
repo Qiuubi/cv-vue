@@ -7,8 +7,8 @@ app.component('nav-links', {
     },
     template:
         /*html*/
-        `<nav>
-            <ul class="nav-cv">
+        `<nav class="nav-cv">
+            <ul >
                 <li id="cv-name">{{name}}</li>
                 <li class="nav-li" v-for="nav in navLinks"><a :href="nav.link">{{ nav.name }}</a></li>
             </ul>

@@ -1,21 +1,21 @@
-app.component('education', {
+app.component('experiences', {
     template:
         /*html*/
         `<section class="cv-quang-work-exp">
-        <h2>{{ title }}</h2>
-        <h3>{{ webTitle }}</h3>
-        <ul>
-            <li v-for="job in web">
-                <h4>{{job.name}} - {{job.company}} -  {{job.town}} - {{ job.date }}</h4>
-            </li>
-        </ul>
-        <h3>{{legalTitle}}</h3>
-        <ul>
-            <li v-for="job in legal">
-                <h4>{{job.name}} - {{job.company}} -  {{job.town}} - {{ job.date }}</h4>
-            </li>
-        </ul>
-    </section>`,
+            <h2>{{ title }}</h2>
+            <h3>{{ webTitle }}</h3>
+            <ul>
+                <li v-for="job in web">
+                    <h4>{{job.name}} - {{job.company}} -  {{job.town}} - {{ job.date }}</h4>
+                </li>
+            </ul>
+            <h3>{{legalTitle}}</h3>
+            <ul>
+                <li v-for="job in legal">
+                    <h4>{{job.name}} - {{job.company}} -  {{job.town}} - {{ job.date }}</h4>
+                </li>
+            </ul>
+        </section>`,
     data() {
         return {
             title: "Expériences professionnelles",
@@ -30,7 +30,10 @@ app.component('education', {
                 { name: "Juriste", company: "Metis AVOCATS", town: "Toulouse", date: "11/17 - 06/18" },
                 { name: "Elève-avocat stagiaire", company: "Me. Agba, Me. Frisch et Me. Nidecker", town: "Toulouse", date: "03/17 - 09/17" },
                 { name: "Juriste stagiaire", company: "Pierre Fabre Dermo-Cosmétique", town: "Lavaur", date: "09/16 - 03/17" },
-            ]
+            ],
+            styles: {
+                paddingLeft: '10px'
+            }
         }
     }
 })
