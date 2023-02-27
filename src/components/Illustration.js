@@ -1,13 +1,15 @@
 app.component('illustration', {
     props: {
-        altName: {
-            type: String,
+        images: {
+            type: Array,
             required: true,
         }
     },
     template:
         /*html*/
-        `<div class="cv-presentation-img"></div>`,
+        `<div v-if="images.length > 0" v-for="image in images" class="cv-presentation-img">
+            <img src="{image.src}" alt="{image.altName}">
+        </div>`,
     data() {
         return {
             title: "Présentation",

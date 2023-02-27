@@ -14,7 +14,7 @@ app.component('pro-projects', {
             <p>{{ exp.description }}</p>
             <p>Tâches et réalisations :</p>
             <ul>
-                <li v-for="task in exp.tasks">{{ task }}</li>
+                <li v-if="exp.tasks.length > 0" v-for="task in exp.tasks" >{{ task }}</li>
             </ul>
             <p>Environnement technique :</p>
             <ul>
@@ -24,7 +24,7 @@ app.component('pro-projects', {
         </section>`,
     data() {
         return {
-            titlePro: "Expériences professionnelles",
+            titlePro: "Projets professionnels",
         }
     }
 })

@@ -14,7 +14,7 @@ app.component('perso-projects', {
             <p>{{ project.description }}</p>
             <p>Tâches et réalisations :</p>
             <ul>
-                <li v-for="task in project.tasks">{{ task }}</li>
+                <li v-if="project.tasks.length > 0" v-for="task in project.tasks">{{ task }}</li>
             </ul>
             <p>Environnement technique :</p>
             <ul>
