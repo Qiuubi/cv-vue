@@ -1,6 +1,8 @@
 * {
     box-sizing: border-box;
+    margin: 0 auto;
     font-family: 'Roboto';
+    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -8,32 +10,97 @@
     src: url(../fonts/Roboto/Roboto-Regular.ttf);
 }
 
-.nav-cv {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 20px;
-    /*box-shadow: ;*/
-}
-
-#cv-name {
-    margin-right: 50px;
-    font-weight: bold;
-}
-
-.nav-cv>li {
-    margin: 10px;
-    list-style: none;
-}
-
-.nav-li {
-    color: #6a89cc;
+body {
+    background-color: #eeeeee;
 }
 
 a {
     text-decoration: none;
 }
 
-#about>p {
+.nav-cv,
+section {
+    margin: 0 auto;
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+}
+
+h3 {
+    margin: 10px 0;
+}
+
+.nav-cv {
+    position: sticky;
+}
+
+.nav-cv>ul,
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    /*box-shadow: ;*/
+}
+
+#cv-name,
+.nav-li {
+    list-style: none;
+}
+
+#cv-name {
+    margin-right: 50px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#cv-name,
+.nav-li>a {
+    margin: 0 10px;
+}
+
+#cv-name,
+.nav-li>a,
+h2,
+h3,
+h4,
+p,
+li {
+    color: #000000;
+}
+
+h2,
+#about>p,
+footer>p {
     text-align: center;
+}
+
+main>.container {
+    width: 80%;
+    align-items: unset;
+}
+
+.container,
+h2,
+p {
+    margin-bottom: 20px;
+}
+
+.cv-presentation-img {
+    width: 25%;
+    height: 150px;
+    margin: 0 10px;
+    background-color: #eeeeee;
+
+}
+
+#skills,
+#education {
+    width: 50%;
+}
+
+.cv-presentation-icon>a>i {
+    font-size: 10px;
 }
