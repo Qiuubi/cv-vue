@@ -2,9 +2,9 @@ app.component('education', {
     template:
         /*html*/
         `<section id="education" class="cv-quang-educ">
-            <h2>{{ title }}</h2>
+            <h2>{{ title.toUpperCase() }}</h2>
             <ul>
-                <li v-for="diploma in list"> {{ diploma.school }}- {{ diploma.name }} - {{ diploma.date }}</li>
+                <li v-for="diploma in list"><span>{{ diploma.date }} </span> - {{ diploma.school }} - {{ diploma.name }}</li>
             </ul>
         </section>`,
     data() {
