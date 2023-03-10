@@ -1,11 +1,11 @@
 app.component('projects', {
     template:
         /*html*/
-        `<pro-projects :proExps="proExps"></pro-projects>
-        <perso-projects :persoProjects="persoProjects"></perso-projects>`,
+        `<project :proProjects="proProjects"></project>
+        <project :persoProjects="persoProjects"></project>`,
     data() {
         return {
-            proExps: [
+            proProjects: [
                 {
                     title: "Occitech",
                     description: "Développement d'une application de gestion et de logistique qui vise à organiser et optimiser les tournées de livraison de marchandises pour les entreprises de transport et de livraison",
@@ -36,7 +36,7 @@ app.component('projects', {
                         "Mise à jour des pages produits (contenu et images)",
                         "Mécanisme d’évènements pour notifier le changement de statut d’une commande et celui d’une livraison",
                         "Mise en place de bannières de cookies",
-                        'Création d’un nouveau site Shopify de vente : <a href="https://www.earpro.fr/">Ear Pro</a>'
+                        'Création d’un nouveau site Shopify de vente'
                     ],
                     techs: [
                         { name: "Langages", content: "HTML CSS JavaScript, Ruby, Liquid" },

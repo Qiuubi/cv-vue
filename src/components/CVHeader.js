@@ -1,18 +1,11 @@
 app.component('cv-header', {
     template:
         /*html*/
-        `<nav-links :navLinks="navLinks"></nav-links>`,
+        `<CVNav :name="name" :message="message"></CVNav>`,
     data() {
         return {
-            navLinks: [
-                { link: "#about", name: "Présentation" },
-                { link: "#profile", name: "Profil" },
-                { link: "#skills", name: "Compétences" },
-                { link: "#exp", name: "Expériences" },
-                { link: "#education", name: "Formations" },
-                { link: "#projects", name: "Projets" },
-                { link: "#interests", name: "Centre d'intérêts" }
-            ],
+            name: "Nguyen Quang",
+            message: "Développeur Web"
         }
     },
 })
