@@ -89,14 +89,22 @@ section {
     justify-content: center;
 }
 
+#cv-name,
+.projects-description {
+    font-weight: bold;
+}
+
 #cv-name {
     font-size: 3rem;
-    font-weight: bold;
     margin-bottom: 10px;
 }
 
 h4 {
-    font-size: 1.5rem;
+    font-size: 2rem;
+}
+
+.projects-description {
+    font-size: 1.2rem;
 }
 
 .cv-aside,
@@ -136,7 +144,6 @@ h4 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
 }
 
 #cv-name,

@@ -105,7 +105,7 @@ app.component('projects', {
                     ],
                     techs: [
                         { name: "Langages", content: "HTML CSS, PHP, JavaScript" },
-                        { name: "Frameworks", content: "Laravel, React.js<" },
+                        { name: "Frameworks", content: "Laravel, React.js" },
                         { name: "BDD/Serveur", content: "MySQL, MariaDB, Apache" },
                         { name: "Intégration continue", content: "Jenkins, Docker" },
                         { name: "Outils/Système", content: "VSCode, Git, MacOS, Linux ultérieurement" },
