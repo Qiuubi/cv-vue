@@ -17,7 +17,7 @@ app.component('project', {
 
             <article v-if="proProjects" class="project" v-for="exp in proProjects">
                 <h4>{{ exp.title }}</h4>
-                <p>{{ exp.description }}</p>
+                <p class="projects-description">{{ exp.description }}</p>
                 <p>Tâches et réalisations :</p>
                 <ul>
                     <li v-if="exp.tasks.length > 0" v-for="task in exp.tasks" >{{ task }}</li>
