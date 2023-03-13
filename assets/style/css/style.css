@@ -6,43 +6,137 @@
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: 'Roboto Regular';
     src: url(../fonts/Roboto/Roboto-Regular.ttf);
 }
 
 body {
-    background-color: #eeeeee;
+    background-color: #044643;
+}
+
+p,
+li {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    color: rgb(10, 194, 185);
+}
+
+p:hover,
+li:hover {
+    color: rgb(13, 233, 222);
+}
+
+li {
+    list-style: square;
+}
+
+li>span {
+    font-weight: bold;
 }
 
 a {
+    color: rgb(10, 194, 185);
     text-decoration: none;
+}
+
+section {
+    margin: 0 auto;
+    background-color: #033835;
+}
+
+#cv-name,
+h2,
+h3,
+h4 {
+    color: rgb(7, 153, 146);
+}
+
+h2 {
+    font-size: 2rem;
+    border-bottom: 4px solid rgb(7, 153, 146);
+}
+
+h3 {
+    font-size: 1.7rem;
+    margin: 10px 0;
+}
+
+.nav-cv,
+.cv-vue {
+    width: 80%;
+}
+
+.nav-cv {
+    padding: 5%;
+    border: 4px solid rgb(7, 153, 146);
+    margin-bottom: 20px;
 }
 
 .nav-cv,
 section {
-    margin: 0 auto;
-    width: 80%;
+    background-color: #033835;
+}
+
+section {
     padding: 20px;
-    margin-bottom: 30px;
-    background-color: #ffffff;
 }
 
-h3 {
-    margin: 10px 0;
+.cv-vue,
+#cv-name,
+.nav-cv>h4 {
+    display: flex;
+    justify-content: center;
 }
 
-.nav-cv {
-    position: sticky;
+#cv-name {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-.nav-cv>ul,
+h4 {
+    font-size: 1.5rem;
+}
+
+.cv-aside,
+.cv-coordinates,
+.cv-skills,
+.cv-interests,
+.cv-portfolio {
+    background-color: #04524e;
+}
+
+.cv-aside {
+    width: 30%;
+}
+
+.portfolio-img {
+    width: 100%;
+}
+
+.portfolio-title {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    animation-duration: 1s;
+}
+
+.portfolio-title:hover {
+    color: rgb(12, 193, 183);
+}
+
+.cv-main {
+    width: 70%;
+}
+
 .container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 
-    /*box-shadow: ;*/
 }
 
 #cv-name,
@@ -50,41 +144,17 @@ h3 {
     list-style: none;
 }
 
-#cv-name {
-    margin-right: 50px;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-#cv-name,
 .nav-li>a {
     margin: 0 10px;
 }
 
-#cv-name,
-.nav-li>a,
-h2,
-h3,
-h4,
-p,
-li {
-    color: #000000;
-}
-
-h2,
 #about>p,
 footer>p {
     text-align: center;
 }
 
-main>.container {
-    width: 80%;
-    align-items: unset;
-}
-
 .container,
-h2,
-p {
+h2 {
     margin-bottom: 20px;
 }
 
@@ -96,11 +166,10 @@ p {
 
 }
 
-#skills,
-#education {
-    width: 50%;
-}
-
 .cv-presentation-icon>a>i {
     font-size: 10px;
+}
+
+.cv-footer {
+    padding: 50px;
 }
