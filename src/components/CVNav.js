@@ -4,7 +4,7 @@ app.component('CVNav', {
             type: String,
             required: true,
         },
-        message: {
+        title: {
             type: String,
             required: true,
         }
@@ -13,6 +13,6 @@ app.component('CVNav', {
         /*html*/
         `<nav class="nav-cv">
                 <h1 id="cv-name">{{name.toUpperCase()}}</h1>
-                <h4>{{ message.toUpperCase() }}</h4>
+                <h4>{{ title.toUpperCase() }}</h4>
         </nav>`
 })
