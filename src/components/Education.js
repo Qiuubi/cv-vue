@@ -10,7 +10,6 @@ app.component('education', {
     data() {
         return {
             title: "Formations et certifications",
-            webTitle: "Web",
             list: [
                 { school: "3W Academy", name: "Développeur intégrateur en réalisation d’applications web", date: "2020-2022" },
                 { school: "EDASOP", name: "CAPA", date: "2016-2017" },

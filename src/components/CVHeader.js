@@ -1,11 +1,11 @@
 app.component('cv-header', {
     template:
         /*html*/
-        `<CVNav :name="name" :message="message"></CVNav>`,
+        `<CVNav :name="name" :title="title"></CVNav>`,
     data() {
         return {
             name: "Nguyen Quang",
-            message: "Développeur Web"
+            title: "Développeur Web"
         }
     },
 })

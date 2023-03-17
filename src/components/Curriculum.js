@@ -9,9 +9,4 @@ app.component('Curriculum', {
             <cv-main></cv-main>
         </main>
         <cv-footer></cv-footer>`,
-    data() {
-        return {
-
-        }
-    },
 })
